@@ -1,15 +1,16 @@
 controller_frequency:       5
 recovery_behaviour_enabled: true
+prune_plan:                 true 
 
 NavfnROS:
   allow_unknown:            false # Specifies whether or not to allow navfn to create plans that traverse unknown space.
   default_tolerance:        0.1 # A tolerance on the goal point for the planner.
 
 GlobalPlanner:
-  use_dijkstra: true
-  use_grid_path: false
-  allow_unknown: false
-  default_tolerance: 0
+  use_dijkstra:             true
+  use_grid_path:            false
+  allow_unknown:            false
+  default_tolerance:        0
 
 
 
@@ -81,12 +82,12 @@ DWAPlannerROS:
   latch_xy_goal_tolerance:  false
 
   # # Forward Simulation Parameters
-  sim_time:               2.0 # default 1.7
-  sim_granularity:        0.025
-  vx_samples:             6
-  vy_samples:             10
-  vtheta_samples:         20
-  penalize_negative_x:    true
+  sim_time:                 2.0 # default 1.7
+  sim_granularity:          0.025
+  vx_samples:               6
+  vy_samples:               10
+  vtheta_samples:           20
+  penalize_negative_x:      true
 
   # # Trajectory scoring parameters
   # path_distance_bias:     32.0 # The weighting for how much the controller should stay close to the path it was given
